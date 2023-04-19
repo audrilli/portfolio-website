@@ -9,10 +9,13 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: baseline;
-  margin-left: 200px;
-  margin-right: 200px;
+  margin-left: 205px;
+  margin-right: 205px;
   margin-top: 20px;
   margin-bottom: 20px;
+}
+.logo {
+  width: 30px;
 }
 
 .container-nav,
@@ -21,10 +24,12 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: baseline;
-  margin-left: 200px;
-  margin-right: 200px;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin-left: 205px;
+  margin-right: 205px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  border: solid 2px black;
+  padding: 20px;
 }
 .container-squares {
   display: flex;
@@ -35,10 +40,8 @@
   align-items: center;
   margin: 0 auto;
   overflow: visible;
-  padding-right: 150px;
-  padding-left: 150px;
-  padding-top: 50px;
-  padding-bottom: 50px;
+  padding-right: 200px;
+  padding-left: 200px;
   overflow: hidden;
 }
 
@@ -46,10 +49,7 @@
   overflow: hidden;
 
   display: flex;
-  border: solid 2px #5100ff;
-  border-radius: 10px;
-
-  /* background-color: blueviolet; */
+  border: solid 2px black;
   height: 350px;
   width: 350px;
   /* padding: 5px; */
