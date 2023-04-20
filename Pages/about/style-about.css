@@ -1,0 +1,13 @@
+.container-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 15vw;
+    margin-right: 15vw;
+    overflow: hidden;
+
+
+  
+  }
+
+
