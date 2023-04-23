@@ -10,63 +10,86 @@
   </head>
 
   <body>
-    <header class="header">
-      <div class="logo">
-        <img class="logo" src="Assets/Logo/logo-0000.svg" alt="logo" />
-      </div>
-      <div class="about">
-        <a href="Pages/about/about.html">about</a>
-      </div>
-    </header>
+    <section class="section-sticky">
+      <header class="header">
+        <div class="logo">
+          <img class="logo" src="Assets/Logo/Logo-00000.svg" alt="logo" />
+        </div>
+        <div class="about">
+          <a href="Pages/about/about.html">about</a>
+        </div>
+      </header>
 
-    <div class="container-nav">
-      <div class="logoprojects">
-        <p>logo</p>
+      <div class="container-nav">
+        <div id="button-professional-projects">
+          <p>professional projects</p>
+        </div>
+        <div id="button-personal-projects">
+          <p>personal projects</p>
+        </div>
       </div>
-      <div class="personalProjects">
-        <p>personal projects</p>
-      </div>
+    </section>
+
+    <section class="intro">
+      <div class="container-intro">
+        <img src="" alt="">
+        <div class="position-icon-showreel">
+          <div class="container-showreel"></div>
+        <div class="container-showreel">
+        <img  id="icon-showreel" src="Assets/Icons/icon-showreel.svg" alt="showreel Animation, scroll down for showreel" height="200">
+      </div>  
+      <div class="container-showreel"></div>
     </div>
-
-    <div class="container-squares">
-      <div class="square">
-        <div class="container-thumbnail">
-          <img
-            src="Thumbnails/A3_Plakat-Skull.jpg"
-            alt="thumbnail sound installations"
-          />
-          <div class="description-thumbnail">project</div>
-        </div>
       </div>
 
-      <div class="square">
-        <div class="container-thumbnail">
-          <img
-            src="Thumbnails/A3_Plakat-Skull.jpg"
-            alt="thumbnail sound installations"
-          />
-          <div class="description-thumbnail">project</div>
+       </section>
+
+    <section class="showreel">
+      <div id="container-showreel">
+      </div>
+    </section>
+    
+    <section id="section-projects">
+      <div class="container-squares">
+        <div class="square">
+          <div class="container-thumbnail">
+            <img
+              src="Thumbnails/A3_Plakat-Skull.jpg"
+              alt="thumbnail sound installations"
+            />
+            <div class="description-thumbnail">project</div>
+          </div>
+        </div>
+
+        <div class="square">
+          <div class="container-thumbnail">
+            <img
+              src="Thumbnails/A3_Plakat-Skull.jpg"
+              alt="thumbnail sound installations"
+            />
+            <div class="description-thumbnail">project</div>
+          </div>
+        </div>
+        <div class="square">
+          <div class="container-thumbnail">
+            <img
+              src="Thumbnails/A3_Plakat-Skull.jpg"
+              alt="thumbnail sound installations"
+            />
+            <div class="description-thumbnail">project</div>
+          </div>
+        </div>
+        <div class="square">
+          <div class="container-thumbnail">
+            <img
+              src="Thumbnails/A3_Plakat-Skull.jpg"
+              alt="thumbnail sound installations"
+            />
+            <div class="description-thumbnail">project</div>
+          </div>
         </div>
       </div>
-      <div class="square">
-        <div class="container-thumbnail">
-          <img
-            src="Thumbnails/A3_Plakat-Skull.jpg"
-            alt="thumbnail sound installations"
-          />
-          <div class="description-thumbnail">project</div>
-        </div>
-      </div>
-      <div class="square">
-        <div class="container-thumbnail">
-          <img
-            src="Thumbnails/A3_Plakat-Skull.jpg"
-            alt="thumbnail sound installations"
-          />
-          <div class="description-thumbnail">project</div>
-        </div>
-      </div>
-    </div>
+    </section>
 
     <footer>
       <div class="container-footer">
@@ -85,5 +108,7 @@
       integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E="
       crossorigin="anonymous"
     ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+    <script src="app.js"></script>
   </body>
 </html>

@@ -16,7 +16,7 @@ body{
 
 .header,
 .container-nav,
-.container-footer {
+.container-footer  {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -24,9 +24,24 @@ body{
   margin: 20px 1vw 20px 1vw;
   font-family: 'Raleway', sans-serif;
 }
-.logo {
-  width: 30px;
+.section-sticky{
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0px;
+  background-color:rgb(255, 40, 122) ;
 }
+
+.logo {
+  justify-content: center;
+  width: 40px;
+}
+
+.logo:hover{
+  animation: rotation 2s infinite linear;
+  transition: 0.70s;
+  transform: rotate(180deg);
+} 
+
 a:link {
     text-decoration: none;
     color: black;
@@ -37,8 +52,10 @@ a:link {
     color: black;
   }
   
-  a:hover {
-    text-decoration: none
+  a:hover,
+   p:hover {
+    text-decoration: none;
+    color: coral;
   }
   
   a:active {
