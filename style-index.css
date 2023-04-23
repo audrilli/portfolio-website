@@ -50,18 +50,16 @@
   color: white;
   font-family: "Raleway", sans-serif;
 }
-/* img {
-  width: 100%;
-  height: auto; */
+
 .section-projects {
   border: 5px cornflowerblue solid;
 }
 
 .container-intro {
   position: relative;
-
   height: 100vh;
   border: 5px cornflowerblue solid;
+  overflow: hidden;
 }
 .position-icon-showreel {
   display: flex;
@@ -72,7 +70,7 @@
   align-items: center;
   margin-bottom: 10px;
 }
-.container-showreel {
+.container-icon-showreel {
   display: flex;
   flex: 1 1 calc(280px + 1em);
   justify-content: center;
