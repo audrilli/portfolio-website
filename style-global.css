@@ -23,12 +23,16 @@ body{
   align-items: baseline;
   margin: 20px 1vw 20px 1vw;
   font-family: 'Raleway', sans-serif;
+  
+  color: white;
+  z-index: 2;
+  position: relative;
 }
 .section-sticky{
   position: -webkit-sticky; /* Safari */
   position: sticky;
   top: 0px;
-  background-color:rgb(255, 40, 122) ;
+  /* background-color:rgb(255, 40, 122) ; */
 }
 
 .logo {
@@ -44,20 +48,23 @@ body{
 
 a:link {
     text-decoration: none;
-    color: black;
+    color: rgb(255, 255, 255);
   }
   
   a:visited {
     text-decoration: none;
-    color: black;
+    color: rgb(255, 255, 255);
   }
   
   a:hover,
    p:hover {
     text-decoration: none;
-    color: coral;
+    color: rgb(255, 40, 122);;
   }
   
   a:active {
     text-decoration: none
   }
+
+  
+  

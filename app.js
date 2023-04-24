@@ -18,3 +18,17 @@ $("#icon-showreel").click(function() {
     }, 2000);
 });
 
+var videoFlower = document.getElementById("videoFlower");
+var positions = document.getElementById("container-intro");
+
+			positions.addEventListener("mousemove", function(event) {
+				var x = event.clientX-50;
+				var y = event.clientY-10
+				var width = videoFlower.clientWidth;
+				var height = videoFlower.clientHeight;
+				var duration = videoFlower.duration;
+
+				var scrubTime = (x / width) * duration;
+				videoFlower.currentTime = scrubTime;
+			});
+
