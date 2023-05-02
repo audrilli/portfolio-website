@@ -32,3 +32,52 @@ var positions = document.getElementById("container-intro");
 				videoFlower.currentTime = scrubTime;
 			});
 
+
+ function scrollbegin () {
+                $(document).ready(function(){
+                    $("html, body").animate({scrollTop:0},1000);
+                    $("html,body").animate({scrollTop:400},1000);
+                    setTimeout(scrollbegin(),500);
+                    
+                })  
+                }
+                
+                
+                // const text = intro.querySelector('h1');
+                function scrolling(){
+                
+                //scrollmagic
+                const controller = new ScrollMagic.Controller();
+                
+                //scene
+                const scene = new ScrollMagic.Scene({
+                    duration: 9000,
+                    triggerElement: positions,
+                    triggerHook: 0,
+                
+                })
+                .addIndicators()
+                .setPin(positions)
+                .addTo(controller);
+                
+                console.log(positions);
+                
+                //videoanimation
+                let accelAmount = 0.1;
+                let scrollpos = 0;
+                let delay = 0;
+                
+                scene.on('update', e => {
+                    scrollpos = e.scrollPos/500;
+                    // console.log(e);
+                    // console.log(scrollpos);
+                
+                });
+                
+                setInterval(() =>{
+                    delay+= (scrollpos-delay)* accelAmount;
+                    // console.log(scrollpos, delay);
+                    videoFlower.currentTime = delay
+                }, 16.66);
+                }
+                scrolling();
