@@ -28,7 +28,7 @@ var positions = document.getElementById("container-intro");
 				var height = videoFlower.clientHeight;
 				var duration = videoFlower.duration;
 
-				var scrubTime = (x / width) * duration;
+				var scrubTime = (x / width) * duration/2;
 				videoFlower.currentTime = scrubTime;
 			});
 
