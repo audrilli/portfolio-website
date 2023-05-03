@@ -36,7 +36,6 @@ var positions = document.getElementById("container-intro");
  function scrollbegin () {
                 $(document).ready(function(){
                     $("html, body").animate({scrollTop:0},1000);
-                    $("html,body").animate({scrollTop:400},1000);
                     setTimeout(scrollbegin(),500);
                     
                 })  
