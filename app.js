@@ -18,24 +18,25 @@ $("#icon-showreel").click(function() {
     }, 2000);
 });
 
-var videoFlower = document.getElementById("videoFlower");
+//mouseinteraction
+// var videoFlower = document.getElementById("videoFlower");
 var positions = document.getElementById("container-intro");
 
-			positions.addEventListener("mousemove", function(event) {
-				var x = event.clientX-50;
-				var y = event.clientY-10
-				var width = videoFlower.clientWidth;
-				var height = videoFlower.clientHeight;
-				var duration = videoFlower.duration;
+// 			positions.addEventListener("mousemove", function(event) {
+// 				var x = event.clientX-50;
+// 				var y = event.clientY-10
+// 				var width = videoFlower.clientWidth;
+// 				var height = videoFlower.clientHeight;
+// 				var duration = videoFlower.duration;
 
-				var scrubTime = (x / width) * duration/2;
-				videoFlower.currentTime = scrubTime;
-			});
+// 				var scrubTime = (x / width) * duration/2;
+// 				videoFlower.currentTime = scrubTime;
+// 			});
 
 
  function scrollbegin () {
                 $(document).ready(function(){
-                    $("html, body").animate({scrollTop:0},1000);
+                    $("html, body").animate({scrollTop:0},(1080*3));
                     setTimeout(scrollbegin(),500);
                     
                 })  
@@ -50,7 +51,7 @@ var positions = document.getElementById("container-intro");
                 
                 //scene
                 const scene = new ScrollMagic.Scene({
-                    duration: 9000,
+                    duration: 0,
                     triggerElement: positions,
                     triggerHook: 0,
                 
@@ -58,6 +59,7 @@ var positions = document.getElementById("container-intro");
                 .addIndicators()
                 .setPin(positions)
                 .addTo(controller);
+                // console.log("outoffunc");
                 
                 console.log(positions);
                 
@@ -68,8 +70,7 @@ var positions = document.getElementById("container-intro");
                 
                 scene.on('update', e => {
                     scrollpos = e.scrollPos/500;
-                    // console.log(e);
-                    // console.log(scrollpos);
+                    
                 
                 });
                 
