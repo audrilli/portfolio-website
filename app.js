@@ -18,20 +18,20 @@ $("#icon-showreel").click(function() {
     }, 2000);
 });
 
-//mouseinteraction
-// var videoFlower = document.getElementById("videoFlower");
+// mouseinteraction
+var videoFlower = document.getElementById("videoFlower");
 var positions = document.getElementById("container-intro");
 
-// 			positions.addEventListener("mousemove", function(event) {
-// 				var x = event.clientX-50;
-// 				var y = event.clientY-10
-// 				var width = videoFlower.clientWidth;
-// 				var height = videoFlower.clientHeight;
-// 				var duration = videoFlower.duration;
+			positions.addEventListener("mousemove", function(event) {
+				var x = event.clientX-5;
+				var y = event.clientY-1;
+				var width = videoFlower.clientWidth;
+				var height = videoFlower.clientHeight;
+				var duration = (videoFlower.duration/2);
 
-// 				var scrubTime = (x / width) * duration/2;
-// 				videoFlower.currentTime = scrubTime;
-// 			});
+				var scrubTime = (x / width) * duration/2;
+				videoFlower.currentTime = scrubTime;
+			});
 
 
  function scrollbegin () {
@@ -51,7 +51,7 @@ var positions = document.getElementById("container-intro");
                 
                 //scene
                 const scene = new ScrollMagic.Scene({
-                    duration: 0,
+                    duration: 8000,
                     triggerElement: positions,
                     triggerHook: 0,
                 
@@ -80,4 +80,9 @@ var positions = document.getElementById("container-intro");
                     videoFlower.currentTime = delay
                 }, 16.66);
                 }
-                scrolling();
+                $(window).one('scroll',function() {
+                    scrolling();
+                    $(window).one('scroll');
+                    
+                 });
+                
